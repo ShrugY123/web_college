@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Анимированные кнопки</title>
+  <style>
+button {
+  background:rgb(38, 0, 173);
+  color:white;
+  margin: 5 auto;
+  width: 100px;
+  padding: 15px;
+  text-align: center;
+  /* border-radius */
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  transition: transform 2s ease, width 1s linear 1.5s, padding 1.5s linear 2s;
+}
+
+input[name="temp"]{
+    width: 300px;
+  padding: 15px;
+  margin: 5px;
+    border: 2px solid rgb(182, 124, 1);
+    border-radius: 5px;
+}
+
+input[name="vd"]{
+    width: 195px;
+  padding: 15px;
+  margin: 5px;
+    border: 2px solid rgb(119, 119, 119);
+    border-radius: 5px;
+}
+
+button:active{
+    transform: rotate(360deg);
+    transform: skew(5);
+    width: 300px;
+    padding: 30px;
+    justify-content: f;
+}
+
+.pog{
+    margin-top: 200px;
+    margin-left: 300px;
+    align-content: center;
+}
+
+  </style>
+ </head>
+ <body>
+  <script src="script"></script>
+     <div class="pog">
+  	    <input type="text" name="temp" id="temp"  placeholder="Температура в C"><br>
+        <button class="case">В "F!"</button>
+        <input type="text"  placeholder="" name="vd">
+    </div>
+ </body>
+</html>
